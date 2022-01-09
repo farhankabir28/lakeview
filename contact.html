@@ -117,7 +117,9 @@
           </div>
 
           <div class="col-md-6 d-flex">
-          	<div id="map" class="bg-white"></div>
+          	<div id="map" class="bg-white"
+            [um-iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.137601000045!2d92.22272081494953!3d22.49901994133757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad4ead1586e90d%3A0x7c2479aa828b0aad!2sLake%20View%20Island!5e0!3m2!1sen!2sbd!4v1641758889152!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"]
+            ></div>
           </div>
         </div>
       </div>
@@ -178,7 +180,7 @@
           <div class="col-md-12 text-center">
 
             <p>
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i> 
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved<i class="icon-heart color-danger" aria-hidden="true"></i> 
   </p>
           </div>
         </div>
@@ -208,6 +210,20 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script type="module">
+    var firebaseConfig = {
+      apiKey: "AIzaSyCfZUvyR2C_OVSAD1J6glt5BJ3fkRetqxY",
+      authDomain: "lview-ea7f2.firebaseapp.com",
+      projectId: "lview-ea7f2",
+      storageBucket: "lview-ea7f2.appspot.com",
+      messagingSenderId: "385204481242",
+      appId: "1:385204481242:web:b9137b5bf336678a5989e3"
+    };
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore().collection("ll");
+  </script>
     
   </body>
 </html>
