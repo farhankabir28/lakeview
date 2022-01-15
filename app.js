@@ -3,6 +3,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     db.collection('comments').add({
        name: form.name.value,
+       email: form.email.value,	
        comment: form.comment.value
     });
     form.name.value = '';
